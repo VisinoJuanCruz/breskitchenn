@@ -1,0 +1,38 @@
+.publicity-container{
+    padding: 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+    margin-top:15%;
+    
+}
+
+.carousel-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+
+.cards-list{
+    display: grid;
+    grid-gap: 5px;
+    list-style-type: none;
+    grid-template-columns: repeat(
+    auto-fill,
+     minmax(
+       300px,
+       1fr
+   )
+     );
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+}
+
+.ofertas-container{
+    margin-top:5%;
+}
+
