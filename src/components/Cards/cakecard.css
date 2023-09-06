@@ -41,3 +41,21 @@
   del{
     color:red;
   }
+
+  .en-oferta-etiqueta{
+    background-color: green;
+    text-align: center;
+    color:white;
+    padding-top:10px;
+    font-family: 'Borel', cursive;
+    margin-bottom: 1px;
+  }
+
+  .en-destacados-etiqueta{
+    background-color: purple;
+    text-align:center;
+    color:white;
+    padding-top:10px;
+
+    font-family: 'Borel', cursive;
+  }

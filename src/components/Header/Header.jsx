@@ -7,6 +7,7 @@ export default function Header(){
 
     return(
         <header className="generic-header">
+            
             <div className="logo">
                 <img src={Logo} alt="logo" />
             </div>

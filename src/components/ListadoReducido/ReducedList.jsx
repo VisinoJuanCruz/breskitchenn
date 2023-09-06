@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CakeCard from '../Cards/CakeCard.jsx';
 import './reducedlist.css';
 
-const ReducedList = ({ TORTAS_OFERTA }) => {
+const ReducedList = ({ TORTAS }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -13,7 +13,7 @@ const ReducedList = ({ TORTAS_OFERTA }) => {
     setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
-  const visibleCards = TORTAS_OFERTA.slice(currentIndex, currentIndex + 4);
+  const visibleCards = TORTAS.slice(currentIndex, currentIndex + 4);
 
   return (
     <div className="cake-list-container">
@@ -27,7 +27,7 @@ const ReducedList = ({ TORTAS_OFERTA }) => {
         ))}
       </div>
 
-      {currentIndex === (TORTAS_OFERTA.length - 4) || TORTAS_OFERTA.length < 5  ? <></>:<button className="arrow-button right" onClick={handleNext}>
+      {currentIndex === (TORTAS.length - 4) || TORTAS.length < 5  ? <></>:<button className="arrow-button right" onClick={handleNext}>
         →
       </button>}
       
